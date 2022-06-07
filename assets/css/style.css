@@ -40,12 +40,13 @@ h1 {
 }
 
 h3 {
-    font-weight: lighter;
+    font-weight: bold;
     text-align: center;
 }
 
 h4 {
     padding: 1rem;
+    color: gray;
     text-align: center;
     font-size: 0.8rem;
     font-weight: lighter;
@@ -62,29 +63,31 @@ i {
 
 /* header */
 
-header nav {
+#hearderNav {
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: fixed;
+
 }
 
-header ul {
+
+#hearderNav a,
+#aboutNav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.7rem;
+}
+
+#hearderNav ul,
+#aboutNav ul {
     background-color: rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: row;
 }
 
-header a {
-    text-decoration: none;
-    color: black;
+#iconeLoupe {
     padding: 0.7rem;
-    transition: all 0.3s;
-}
-
-header a:hover {
-    background-color: white;
 }
 
 #hearderImg {
@@ -95,20 +98,33 @@ header a:hover {
     align-items: center;
 }
 
-#iconeLoupe {
-    padding: 0.7rem;
-}
-
 /* about me */
 
-#myName {
-    display: flex;
-    padding-top: 2rem;
+.aboutMeSide {
+    width: 60%;
 }
 
-#myName figure h5 {
+#myName {
+    margin: 0 auto;
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-around;
+}
+
+#myName img {
+    width: 100%;
+}
+
+#myName div {
+    width: 48%;
+    justify-content: space-around;
+}
+
+#myName h5 {
     text-align: center;
+    flex-direction: column;
     font-size: 1rem;
+    padding-bottom: 3rem;
 }
 
 #myName p {
@@ -116,8 +132,130 @@ header a:hover {
     font-size: 1.1rem;
 }
 
+#competence {
+    padding-bottom: 3rem;
+}
+
 #competence h6 {
     text-align: center;
     font-size: 1.2rem;
     padding: 3rem;
+}
+
+#competence p {
+    font-size: 20px;
+    padding: 1rem 0;
+}
+
+.container {
+    background-color: #F1F1F1;
+    width: 100%;
+}
+
+.skill {
+    background-color: #616161;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#photography {
+    width: 0%;
+    opacity: 0;
+    transition: all 2s;
+}
+
+#webDesign {
+    width: 0%;
+    opacity: 0;
+    transition: all 2s;
+}
+
+#photoshop {
+    width: 0%;
+    opacity: 0;
+    transition: all 2s;
+}
+
+/* project */
+
+#project {
+    background-color: #616161;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+}
+
+#project p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Portfolio */
+
+#portfolioImg {
+    width: 100%;
+
+    background-image: url("../img/parallax2.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolioSide {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#portfolio h2{
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 0.7rem;
+}
+
+#portfolio h3 {
+    margin: 3rem 0 1rem 0;
+    font-size: 2rem;
+}
+
+#portfolio h4 {
+    padding: 0.5rem 0;
+}
+
+#ForH4 {
+    margin-bottom: 2rem;
+}
+
+#photoSide {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.cards {
+    position: relative;
+    width: 23%;
+    margin: 0.3rem;
+}
+
+.cards img {
+    width: 100%;
+}
+
+#buttonMore{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+#buttonMore button{
+    background-color: #F1F1F1;
+    border: none;
+    color: black;
+    
 }
