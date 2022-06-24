@@ -1,6 +1,7 @@
 const photography = document.getElementById("photography")
 const webDesign = document.getElementById("webDesign");
 const photoshop = document.getElementById("photoshop");
+const goTop = document.getElementById("goTop");
 let defil
 
 const imgElements = document.querySelectorAll(".cards img");
@@ -50,21 +51,6 @@ window.addEventListener(
     }
 )
 
-//correction barre de progesion
-//const bRange = document.getElementsByClassName("bRange");
-//console.dir(bRange[0]);
-//const progress = [90,85,75];
-//window.addEventListener("scroll",()=>{
-//    for (let index = 0; index < bRange.length; index++) {
-//        if(bRange[index].scrollIntoView){
-//            bRange[index].style.width = progress[index]+"%";
-//        }
-//        
-//    }
-//})
-
-//-----------------------------------------------------------------------------------------------
-
 document.body.prepend(frameImg);
 let i = 0;
 while (i < imgElements.length) {
@@ -87,5 +73,12 @@ frameImg.addEventListener(
             frameImg.style.display = "none";
             frameImg.innerHTML = "";
         }
+    }
+)
+
+goTop.addEventListener(
+    "click",
+    (event) => {
+        document.documentElement.scrollTop = 0;
     }
 )

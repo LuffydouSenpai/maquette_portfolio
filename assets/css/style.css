@@ -210,7 +210,7 @@ i {
     margin: 0 auto;
 }
 
-#portfolio h2{
+#portfolio h2 {
     font-size: 3rem;
     color: white;
     letter-spacing: 0.7rem;
@@ -247,15 +247,148 @@ i {
     width: 100%;
 }
 
-#buttonMore{
+#buttonMore {
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
-#buttonMore button{
+#buttonMore button {
     background-color: #F1F1F1;
     border: none;
     color: black;
-    
+
+}
+
+#contactImg {
+    width: 100%;
+
+    background-image: url("../img/parallax3.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#Contact h2 {
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 0.7rem;
+}
+
+#ContactSide {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#ContactSide h4 {
+    margin-bottom: 1rem;
+}
+
+#information {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+
+#informationImg {
+    width: 30%;
+}
+
+#informationImg img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#informationEtFormuliare {
+    width: 65%;
+}
+
+#informationContact p {
+    margin: 0.5rem 0;
+}
+
+#informationContact p:nth-child(4) {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#informationContact p:last-of-type {
+    font-size: 0.8rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#formulaire div {
+    width: 100%;
+
+}
+
+#formulaire div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+
+#formulaire div:nth-child(1) div {
+    width: 48%;
+}
+
+
+#formulaire div:nth-child(2) {
+    width: 100%;
+}
+
+#formulaire input {
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+}
+
+#formulaire div:nth-child(3) {
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#formulaire div button {
+    padding: 0.7rem 0.5rem;
+    background-color: black;
+    color: white;
+    width: 30%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #666666;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#goTop {
+    margin: rem 0;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: white;
+}
+
+#socialMedia {
+    margin: 1rem 0;
+}
+
+#socialMedia i {
+    color: white;
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
 }
